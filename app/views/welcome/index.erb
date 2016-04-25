@@ -1,0 +1,137 @@
+<html>
+<head>
+  <title>Demographic statistics</title>
+
+<!-- Defining the internal style sheets-->
+<style>
+
+	body {
+	    font-family: arial;
+	    font-color: black
+		
+		 }
+	button {
+	       
+			font-family: cursive;
+			font-size: 100%;
+			 margin-left:550px;
+			
+			}
+			
+table#univs tr:nth-child(odd) {
+    background-color: #eee;
+    border: 1px solid black;
+    
+}
+table#univs tr:nth-child(even) {
+   background-color:#fff;
+   border: 1px solid black;
+}
+table#univs th	{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+		
+</style>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script>
+         $(function() {
+            $( "#button-1").button();
+            $( "#button-1" ).buttonset();
+         });
+      </script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+//Counter to keep a track of the number of records displayed on the web page
+var count = 1;
+$("#stat").hide();
+
+$("button").click(function(){
+ $("#stat").show();
+ 
+ //Set interval function to set a 0.5 seconds delay
+var si=setInterval(function(){
+			
+			//JQuery AJAX request to get the data from the controller which retrieves data from the NOSQL Mongo database
+	        $.get("maincontroller/output/"+ count.toString(), function(data)
+				 
+		   {
+		   
+		
+		
+	            console.log(data);
+	 
+            
+				for (var i = 0; i < data.length; i++)
+	             {     
+	                 //Appending the rows to the table
+				      
+                      var row = $("<tr id='"+count+"'>");
+				      $("#tbody1").append(row).delay(500).fadeIn("slow");
+					  row.append($("<td>" + data[i].jurisid + "</td>"));
+					  row.append($("<td>" + data[i].partid + "</td>"));
+					  row.append($("<td>" + data[i].femid6 + "</td>"));
+					  row.append($("<td>" + data[i].perfem + "</td>"));
+					  row.append($("<td>" + data[i].mal + "</td>"));	
+					  row.append($("<td>" + data[i].permal + "</td>"));
+					  row.append($("</tr>"));
+					  $("#tbody1 tr#"+count).hide();
+              		  $("#tbody1 tr#"+count).fadeIn("slow");
+              		  
+              		  //Clearing the old records after 20 records have been displayed
+					  if(count%21 == 0)
+					 {
+						 $('#stat tbody').html("");
+		 				//count = count + 1;
+		 
+		 			}
+		 			if(count==201){
+		 			clearInterval(si);
+		 			}
+                      count = count + 1;		  
+                            
+				}
+			
+			});	
+				 
+		}, 500);
+		
+		});
+		});
+                         
+                      
+
+</script>
+</head>
+
+<body>
+<h3 align="center"> DMOGRAPHICAL STATISTICS BASED ON ZIP-CODE </h3>
+<button id="button-1" style="color:blue"> SHOW THE STATISTICS </button>
+<br/>
+<br/>
+
+
+<table id="stat" align="center" cellpadding="30">
+    <thead>
+        <tr>
+            <th>JURISDICTION</th><th>PARTICIPANTS</th><th>FEMALE</th><th>PERCENT_FEMALE</th><th>MALE</th><th>PERCENT_MALE</th>
+        </tr>
+    </thead>
+    <tbody id = "tbody1">
+    </tbody>
+</table>
+
+
+
+
+</body>
+</html>
+
+			 

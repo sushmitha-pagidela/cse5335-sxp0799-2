@@ -1,0 +1,2226 @@
+
+
+Started GET "/" for ::1 at 2016-04-23 01:45:42 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.4ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2016-04-23 01:45:43 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.7ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2016-04-23 01:45:43 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:46:49 -0500
+
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.3) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.3) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.3) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.3) lib/active_record/base.rb:315:in `<module:ActiveRecord>'
+  activerecord (4.2.3) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:47:36 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:49:07 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:50:40 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.9.1) lib/puma/server.rb:490:in `handle_request'
+  puma (2.9.1) lib/puma/server.rb:361:in `process_client'
+  puma (2.9.1) lib/puma/server.rb:254:in `block in run'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.9.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (130.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:52:28 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:55:55 -0500
+
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:655:in `connect'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/sumanthpikkili/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.3) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.3) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:58:49 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+  puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+  puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `call'
+  puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.7ms)
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWidgets (20140707111715)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/sumanthpikkili/Desktop/cse5335-sxp0799-2/cse5335-sxp0799-2/db/migrate/20140707111715_create_widgets.rb:8)
+  [1m[35m (0.6ms)[0m  CREATE TABLE "widgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "stock" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140707111715"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2016-04-23 01:59:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (13.8ms)
+Completed 200 OK in 2252ms (Views: 2230.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/maincontroller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/theme.self-d38f7cb12cba5b49b26e8f23b4ef19e91d8ef111d8a07c3ba66c80b125d1b7ad.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/widgets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-23 01:59:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-23 01:59:22 -0500
+
+
+Started GET "/assets/maincontroller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 01:59:22 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 01:59:22 -0500
+
+
+Started GET "/assets/widgets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 01:59:22 -0500
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:25 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (89.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:25 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:26 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (64.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:26 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (64.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:27 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:27 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:28 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (3.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:28 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (48.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:29 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:29 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (47.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:30 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:30 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (63.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:31 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:31 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (52.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:32 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (62.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:32 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:33 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.4ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:33 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (54.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:34 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.5ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:34 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.1ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:35 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (67.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:35 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:36 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:36 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:37 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.1ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:37 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (62.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:38 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (5.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (68.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 01:59:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 168ms (Views: 167.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:40 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.5ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:40 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:41 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:41 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (62.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:42 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (49.1ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:42 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:43 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:43 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (56.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:44 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (65.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:44 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (70.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:45 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (50.5ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:46 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:46 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:47 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:47 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:48 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (63.4ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:48 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:49 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (54.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:49 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (62.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:50 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.4ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:50 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:51 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:51 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:52 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:52 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:53 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:53 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.2ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:54 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (64.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:54 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (62.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:55 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:55 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (56.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:56 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.5ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:56 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (3.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (56.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:57 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:57 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:58 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.1ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:58 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (56.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:59 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (66.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 01:59:59 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.4ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:00 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (60.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:00 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.7ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.7ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:01 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:02 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (59.4ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:03 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (50.9ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:04 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.3ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:05 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (66.8ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:00:06 -0500
+
+LoadError (cannot load such file -- mongo):
+  app/controllers/maincontroller_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /Users/sumanthpikkili/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.6ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1079ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:30 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 2618ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:33 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 644ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:01:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (10.0ms)
+Completed 200 OK in 633ms (Views: 632.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:37 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 739ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:38 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 607ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:39 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 692ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:39 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 567ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:40 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 634ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:41 -0500
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:41 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 560ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 565ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:42 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 710ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:42 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 594ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:43 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 546ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:44 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 539ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:44 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 593ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:45 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:46 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1539ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:46 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 571ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 623ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:47 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 537ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:47 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 738ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:48 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:49 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 614ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:49 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 596ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:49 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 630ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:50 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1603ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 665ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:51 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:51 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1048ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:52 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 856ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 606ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:52 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 586ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:53 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 581ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:54 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1014ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:55 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 649ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:56 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 653ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:57 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 539ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:58 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1042ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:01:59 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1022ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:00 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1017ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:01 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 556ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:02 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 553ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:03 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 795ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:07 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 754ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:09 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 735ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:10 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 663ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:10 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 577ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:11 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 614ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:02:11 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 526ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1087ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:45 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 674ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:46 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 780ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:47 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 611ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:48 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 631ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:48 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/" for ::1 at 2016-04-23 02:03:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 886ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:49 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 317ms (Views: 302.4ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 717ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:52 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 544ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:56 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 593ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:57 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 549ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:03:59 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 541ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:00 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 651ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:00 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 575ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:01 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 543ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:02 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 791ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:02 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:03 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 928ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:03 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 936ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 979ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:04 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 670ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:05 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 935ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:04:06 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 538ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:06:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 2267ms (Views: 120.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:07:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (2.4ms)
+Completed 200 OK in 509ms (Views: 508.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:04 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1699ms (Views: 143.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:05 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 759ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/201" for ::1 at 2016-04-23 02:07:06 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"201"}
+Completed 200 OK in 785ms (Views: 148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1001" for ::1 at 2016-04-23 02:07:23 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1001"}
+Completed 200 OK in 950ms (Views: 169.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1601" for ::1 at 2016-04-23 02:07:25 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1601"}
+Completed 200 OK in 984ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:07:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 146ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:28 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 983ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/201" for ::1 at 2016-04-23 02:07:30 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"201"}
+Completed 200 OK in 816ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/201" for ::1 at 2016-04-23 02:07:30 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"201"}
+Completed 200 OK in 805ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 1209ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:07:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (36.5ms)
+Completed 200 OK in 1123ms (Views: 1119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:59 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:07:59 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1238ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/201" for ::1 at 2016-04-23 02:08:01 -0500
+Completed 200 OK in 1107ms (Views: 222.5ms | ActiveRecord: 0.0ms)
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"201"}
+Completed 200 OK in 2182ms (Views: 1034.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:08:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:09:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 301ms (Views: 278.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:09:15 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 2454ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 02:09:17 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 729ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/201" for ::1 at 2016-04-23 02:09:18 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"201"}
+Completed 200 OK in 846ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 02:09:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:15:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (11.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (13.1ms)
+Completed 200 OK in 797ms (Views: 776.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:15:43 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1787ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:15:45 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1532ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:22:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (13.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (12.4ms)
+Completed 200 OK in 769ms (Views: 728.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/maincontroller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/theme.self-d38f7cb12cba5b49b26e8f23b4ef19e91d8ef111d8a07c3ba66c80b125d1b7ad.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/widgets.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/application.self-565a90fd247bd9ef75cf5f71be1e11e37c3ad80695d8bdfb331fe844afbe0a9e.css?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/widgets.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/application.self-85a3df08aab34bc6a22c0cf18bd349b5a3fda5edca3e6dead5e0390446173b12.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/assets/maincontroller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-23 03:23:00 -0500
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:23:02 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 2748ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:23:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:32:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (14.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (12.9ms)
+Completed 200 OK in 830ms (Views: 807.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:32:12 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 2860ms (Views: 116.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:32:15 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 763ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:32:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (0.1ms)
+Completed 200 OK in 172ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-23 03:33:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (11.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.erb within layouts/application (12.5ms)
+Completed 200 OK in 699ms (Views: 675.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:33:47 -0500
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+
+
+Started GET "/maincontroller/output/1" for ::1 at 2016-04-23 03:33:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MaincontrollerController#output as */*
+  Parameters: {"i"=>"1"}
+Completed 200 OK in 1859ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 1386ms (Views: 169.3ms | ActiveRecord: 0.0ms)

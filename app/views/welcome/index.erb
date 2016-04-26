@@ -7,7 +7,8 @@
 
 	body {
 	    font-family: arial;
-	    font-color: black
+	    font-color: black;
+	    background-color: ffcccc;
 		
 		 }
 	button {
@@ -18,16 +19,16 @@
 			
 			}
 			
-table#univs tr:nth-child(odd) {
+table#stat tr:nth-child(odd) {
     background-color: #eee;
     border: 1px solid black;
     
 }
-table#univs tr:nth-child(even) {
+table#stat tr:nth-child(even) {
    background-color:#fff;
    border: 1px solid black;
 }
-table#univs th	{
+table#stat th	{
     background-color: black;
     color: white;
     border: 1px solid black;
@@ -56,7 +57,7 @@ $("#stat").hide();
 $("button").click(function(){
  $("#stat").show();
  
- //Set interval function to set a 0.5 seconds delay
+ //set a 0.5 seconds delay
 var si=setInterval(function(){
 			
 			//JQuery AJAX request to get the data from the controller which retrieves data from the NOSQL Mongo database
@@ -85,7 +86,7 @@ var si=setInterval(function(){
 					  $("#tbody1 tr#"+count).hide();
               		  $("#tbody1 tr#"+count).fadeIn("slow");
               		  
-              		  //Clearing the old records after 20 records have been displayed
+              		  //Clears the old records after 20 records are displayed
 					  if(count%21 == 0)
 					 {
 						 $('#stat tbody').html("");
@@ -112,8 +113,8 @@ var si=setInterval(function(){
 </head>
 
 <body>
-<h3 align="center"> DMOGRAPHICAL STATISTICS BASED ON ZIP-CODE </h3>
-<button id="button-1" style="color:blue"> SHOW THE STATISTICS </button>
+<h3 align="center"> DEMOGRAPHICAL STATISTICS BASED ON ZIP-CODE </h3>
+<button id="button-1" style="color:red"> SHOW THE STATISTICS </button>
 <br/>
 <br/>
 
